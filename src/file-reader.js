@@ -18,7 +18,7 @@ const handleValidLines = lines => {
         () => console.log('>>> saída salva!'));
 };
 
-function handleInvalidLines(lines) {
+const handleInvalidLines = lines => {
     const invalidLines = lines.filter(line => validateRow(line) !== true);
     console.error(`>>> ${invalidLines.length} invalid lines`);
     invalidLines.forEach((line, index) => console.error(`>>> line ${index}`, line));
@@ -26,7 +26,7 @@ function handleInvalidLines(lines) {
         `..\\resources\\output\\output_error_${name}.txt`,
         invalidLines.join('\n'),
         () => console.log('>>> saída salva!'));
-}
+};
 
 fs.readFile(path, 'utf-8', (err, data) => {
     if (err) {
