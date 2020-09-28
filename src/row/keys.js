@@ -1,0 +1,17 @@
+module.exports = [
+    'justica',
+    'tribunal',
+    'uf',
+    'tipoUnidade',
+    'classificacaoUnidade',
+    'codigo',
+    'unidadeJudiciaria',
+    'municipioSede',
+    'telefone',
+    'cep',
+    'endereco',
+    'unidadesJudiciarias',
+    'estoque',
+    'taxaCongestionamentoLiquida',
+    'taxaCongestionamentoTotal',
+];
